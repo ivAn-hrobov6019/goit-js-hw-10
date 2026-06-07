@@ -16,3 +16,286 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* Таймер */
+.timer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+/* Стилі для імпуту */
+
+#datetime-picker {
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  margin-bottom: 32px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#datetime-picker:hover,
+#datetime-picker:focus {
+  border-color: #000;
+}
+
+#datatime-picker:active {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  border-color: #808080;
+  color: #808080;
+}
+
+/* Стилі для кнопки */
+button[data-start] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-start]:hover,
+button[data-start]:focus {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+
+  color: #989898;
+}
+
+/* Стилі випадаючого вікна */
+
+body .flatpickr-calendar {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 12px;
+  width: 320px;
+}
+
+body .flatpickr-months {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body .flatpickr-months .flatpickr-prev-month,
+body .flatpickr-months .flatpickr-next-month {
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  padding: 0 4px;
+}
+
+body .flatpickr-months .flatpickr-month {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  position: static;
+  width: auto;
+}
+
+body .flatpickr-current-month {
+  position: static;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+body .flatpickr-current-month .flatpickr-monthDropdown-wrapper {
+  margin: 0;
+}
+
+body .flatpickr-day {
+  color: #757575;
+  border-radius: 50%;
+  height: 38px;
+  line-height: 38px;
+  margin: 2px 0;
+  transition: all 150ms ease;
+}
+
+body .flatpickr-day.today {
+  background-color: transparent !important;
+  border: 2px solid #4e75ff !important;
+  color: #2b2b2b !important;
+}
+
+body .flatpickr-day:hover,
+body .flatpickr-day:focus {
+  background-color: #c1c1c1 !important;
+  border-color: transparent !important;
+  color: #2b2b2b !important;
+}
+
+body .flatpickr-day.selected,
+body .flatpickr-day.selected:hover {
+  background-color: #4e75ff !important;
+  border-color: #4e75ff !important;
+  color: #ffffff !important;
+}
+
+body span.flatpickr-weekday {
+  color: #1e264f;
+  font-weight: 500;
+}
+
+body .flatpickr-time {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 12px;
+  padding-top: 8px;
+}
+
+body .flatpickr-time input {
+  font-weight: 700;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+
+/* Стилі снекбару */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin: 40px auto;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.form input[type='number'] {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms ease;
+}
+
+.form input[type='number']:focus,
+.form input[type='number']:hover {
+  border-color: #000;
+}
+
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.form fieldset legend {
+  font-size: 16px;
+  color: #2e2f42;
+  padding: 0 4px;
+}
+
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+  cursor: pointer;
+}
+
+.form input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 14px;
+  accent-color: #4e75ff;
+}
+
+/* Кнопка відправки  */
+.form button[type='submit'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+/* Ховер для синьої кнопки */
+.form button[type='submit']:hover,
+.form button[type='submit']:focus {
+  background: #6c8cff;
+}
